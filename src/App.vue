@@ -1,11 +1,12 @@
 <template>
   <div id="app">
-  <h2>app</h2>
+
+  <!-- 路由展示区域 -->
+  <router-view></router-view>
   </div>
 </template>
 
 <style lang="less">
-
 
 
 </style>
