@@ -41,6 +41,12 @@ router.beforeEach((to, from, next) => {
     next()
 })
 
+// axios请求拦截器
+axios.interceptors.request.use((config) => {
+    config.headers.Authorization = sessionStorage.getItem('token')
+    return config
+})
+
 new Vue({
     router,
     store,
